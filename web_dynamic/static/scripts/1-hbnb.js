@@ -1,18 +1,18 @@
 $(document).ready(function() {
-    let amenidadesSeleccionadas = {};
+    let amenitiesChecked = {};
   
-    $('input[type="checkbox"]').change(function() {
-      let amenidadId = $(this).data('id');
-      let amenidadNombre = $(this).data('name');
+    $('div.amenities input[type="checkbox"]').change(function() {
+      let amenityId = $(this).data('id');
+      let amenityName = $(this).data('name');
   
       if ($(this).is(':checked')) {
-        amenidadesSeleccionadas[amenidadId] = amenidadNombre;
+        amenitiesChecked[amenityId] = amenityName;
       } else {
-        delete amenidadesSeleccionadas[amenidadId];
+        delete amenitiesChecked[amenityId];
       }
   
-      let listaAmenidades = Object.values(amenidadesSeleccionadas).join(', ');
-      $('.amenities h4').text(listaAmenidades);
+      let amenitiesList = Object.values(amenitiesChecked).join(', ');
+      $('.amenities h4').text(amenitiesList);
     });
   });
   
