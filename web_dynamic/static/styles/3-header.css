@@ -9,7 +9,7 @@ header .logo {
     left: 20px;
     height: 100%;
 }
-header .api_status {
+#api_status {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -19,6 +19,6 @@ header .api_status {
     top: 30px;
     transform: translateY(-50%);
 }
-header .api_status.available {
+.api_status.available {
     background-color: #ff545f;
 }
