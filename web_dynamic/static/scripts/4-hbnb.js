@@ -6,7 +6,7 @@ $(document).ready(function() {
       let amenityId = $(this).data('id');
       let amenityName = $(this).data('name');
 
-      if ($(this).is(':checked')) {
+      if ($(this).is('checked')) {
           amenitiesChecked[amenityId] = amenityName;
       } else {
           delete amenitiesChecked[amenityId];
